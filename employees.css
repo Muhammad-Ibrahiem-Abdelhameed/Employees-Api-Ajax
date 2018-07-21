@@ -1,0 +1,23 @@
+
+.row{
+    align-items: center;
+    align-content: center;
+}
+
+.btn{
+    margin: 1px 2px 2px 1px;
+    align-self: center;
+    align-items: center;
+}
+
+
+.small-xs-4{
+    display: inline;
+    margin: 0 auto;
+}
+
+
+#linkcreate{
+    margin: 10px 10px 10px 10px;
+}
+

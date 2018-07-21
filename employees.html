@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Employess Api</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="employees.css">
+    
+</head>
+<body align="center">
+    <div class="container-fluid" style="background-color: cornflowerblue">
+        <h1 style="text-align: center; padding : 5px 5px 5px 5px ;margin: 10px 10xp 10px 10px; color: white; font-family: Georgia, 'Times New Roman', Times, serif">Employees</h1>
+    </div>
+    <div class="container">
+        <div class="row" align="center" style="margin: 10px 10px 10px 10px;">
+            <div class="small-xs-4" align="center">
+                <a id="linkcreate" href="create-employee.html"><button class="btn btn-success">Create Employee</button></a>
+            </div>
+        </div>
+        
+        <div id="divget" class="container">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>Mobile</th>
+                        <th>Tel</th>
+                        <th>Address</th>
+                        <th>UserName</th>
+                        <th>Pass</th>
+                        <th> </th>
+                    </tr>
+                    </thead>
+                    <tbody id="tablebody">
+                       
+                     
+                    </tbody>
+                </table>
+            </div>
+        
+        <div class="modal fade" id="modeldel" role="alert">
+            <div class="modal-dialog">
+                    <div class="modal-content">
+                            <div class="modal-body">
+                                <p>Are You sure to delete this employee</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-default" data-dismiss="modal">Close</button>
+                                <button class="btn btn-danger" id="btncondel" data-dismiss="modal" onclick="confirmDel();">Delete</button>
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="employees.js">
+        
+    </script>
+    
+</body>
+</html>
